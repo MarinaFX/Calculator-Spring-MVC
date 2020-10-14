@@ -9,7 +9,7 @@ import org.springframework.context.annotation.Configuration;
 import org.springframework.context.annotation.Scope;
 
 @Configuration
-@ComponentScan(basePackages = "com.marinafx.cloudnative.tema1")
+@ComponentScan(basePackages = "com.marinafx")
 public class ApplicationConfig {
 
     @Bean
