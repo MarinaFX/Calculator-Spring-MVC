@@ -1,5 +1,6 @@
 package com.marinafx.model;
 
+import com.marinafx.CalculatorController;
 import com.marinafx.commands.*;
 import org.springframework.beans.factory.BeanFactory;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -17,6 +18,12 @@ public class ApplicationConfig {
     public Calculator calculator(BeanFactory beanFactory){
         return new Calculator(beanFactory);
     }
+
+    @Bean
+    public CalculatorController calculatorController(){
+        return new CalculatorController();
+    }
+
 
     @Bean(name = "sum")
     @Scope(value = "prototype")
